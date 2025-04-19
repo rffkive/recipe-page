@@ -76,3 +76,18 @@
   .header {
     margin-bottom: 2rem;
   }
+
+  .preparation {
+    background-color: var(--rose-50);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .preparation h2 {
+    color: var(--rose-800);
+  }
+
+  .preparation ul {
+    list-style-type: none;
+  }
