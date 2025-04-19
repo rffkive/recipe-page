@@ -133,14 +133,6 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-.instructions h3 {
-  display: inline-block;
-}
-
-.instructions p {
-  margin-top: 0.5rem;
-}
-
 .nutrition table {
   width: 100%;
   border-collapse: collapse;
@@ -148,6 +140,33 @@ hr {
 
 .nutrition tr {
   border-bottom: 1px solid var(--stone-150);
+}
+.steps {
+  padding-left: 1.5rem;
+  list-style: none;
+  counter-reset: step-counter;
+}
+
+.steps li {
+  counter-increment: step-counter;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.steps li::before {
+  content: counter(step-counter) ".";
+  color: var(--brown-800);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 
 .nutrition tr:last-child {
@@ -164,4 +183,43 @@ hr {
 
 .nutrition td:last-child {
   text-align: right;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--stone-600);
+  font-size: 0.875rem;
+  padding: 1rem 0;
+}
+
+.attribution {
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: var(--brown-800);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .preparation {
+    padding: 1.25rem;
+  }
 }
