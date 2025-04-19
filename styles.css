@@ -140,3 +140,28 @@ hr {
 .instructions p {
   margin-top: 0.5rem;
 }
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition td {
+  padding: 1rem 0;
+}
+
+.nutrition td:first-child {
+  font-weight: 700;
+}
+
+.nutrition td:last-child {
+  text-align: right;
+}
