@@ -222,3 +222,64 @@ footer {
     padding: 1.25rem;
   }
 }
+
+.steps li:hover,
+.preparation ul li:hover,
+.ingredients li:hover {
+  background-color: var(--stone-100);
+  transition: background-color 0.2s ease;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.steps li:focus,
+.preparation ul li:focus,
+.ingredients li:focus {
+  outline: 2px solid var(--brown-800);
+  outline-offset: 2px;
+}
+
+.nutrition tr:hover {
+  background-color: var(--stone-100);
+  transition: background-color 0.2s ease;
+}
+
+.attribution a {
+  transition: all 0.2s ease;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: var(--rose-800);
+  text-decoration: underline;
+  outline: none;
+}
+
+.attribution a:focus {
+  box-shadow: 0 0 0 2px var(--rose-800);
+}
+
+
+.prep-label {
+  transition: color 0.2s ease;
+}
+
+.prep-label:hover {
+  color: var(--brown-800);
+}
+
+.step-title {
+  transition: color 0.2s ease;
+}
+
+.step-title:hover {
+  color: var(--rose-800);
+}
+
+.thumbnail img {
+  transition: transform 0.3s ease;
+}
+
+.thumbnail img:hover {
+  transform: scale(1.02);
+}
