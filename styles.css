@@ -5,6 +5,17 @@
     border: 2px dotted red;
   }
   
+  :root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+  }
+
   body {
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
@@ -38,4 +49,26 @@
     height: auto;
     display: block;
     border-radius: 0.75rem;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    color: var(--stone-900);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--brown-800);
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
   }
