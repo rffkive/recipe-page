@@ -111,3 +111,32 @@
 .ingredients li {
   margin-bottom: 0.5rem;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--stone-150);
+  margin: 2rem 0;
+}
+
+.instructions {
+  margin-bottom: 2rem;
+}
+
+.instructions ol {
+  list-style-position: inside;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.instructions li {
+  margin-bottom: 1.5rem;
+}
+
+.instructions h3 {
+  display: inline-block;
+}
+
+.instructions p {
+  margin-top: 0.5rem;
+}
